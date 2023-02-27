@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/study/study",
+    "pages/search/search",
+    "pages/recommend/recommend",
+    "pages/recommend/detail/detail",
+    "pages/settings/settings",
+    "pages/search/detail/detail",
+    "pages/settings/clause/clause",
+    "pages/settings/feedback/feedback",
+    "pages/settings/collection/collection"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "/images/study.png",
+        "selectedIconPath": "/images/study-selected.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/images/search.png",
+        "selectedIconPath": "/images/search-selected.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "每日推荐",
+        "iconPath": "/images/recommend.png",
+        "selectedIconPath": "/images/recommend-select.png"
+      },
+      {
+        "pagePath": "pages/settings/settings",
+        "text": "个人中心",
+        "iconPath": "/images/settings.png",
+        "selectedIconPath": "/images/settings-selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#EFEFF4",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "艾贝单词",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

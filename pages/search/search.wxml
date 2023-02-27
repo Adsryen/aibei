@@ -1,0 +1,19 @@
+<view class="container" >
+  <view class="input-container">
+    <!-- 输入的时候就会触发inputInfo函数，{{text}}里的text对应js的data中的text -->
+    <textarea class="input-search" rows="8" value="{{text}}" bindinput="inputInfo" placeholder="请输入您要查询的单词"></textarea>
+  </view>
+  <view class="action">
+      <!-- bindtap里的函数在点击对应图片时被调用 点“译”调用search函数，del函数同理（调用时清空翻译内容和翻译结构） -->
+      <text class="translate" bindtap="translate">翻译</text>
+      <text class="del" bindtap="del" >删除</text>
+    </view>
+  <view class="trans_res_box">
+    <text></text>
+    <!-- {{translation}}对应data中的translation即翻译结果 -->
+    <textarea class="trans_res_textarea" rows="8" value="{{translation}}"></textarea>
+  </view>
+  <view class="button-search" bindtap="help" >
+    <text class="text-search">说明</text>
+  </view>
+</view>

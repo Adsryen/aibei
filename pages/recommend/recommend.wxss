@@ -1,0 +1,41 @@
+/* pages/recommend/recommend.wxss */
+.every_day{
+  position: relative; 
+  left: 114rpx; 
+  top: 152rpx;
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  margin: 40rpx;
+}
+
+.short_essay_en_title{
+  width: 478rpx; 
+  height: 70rpx; 
+  display: block; 
+  box-sizing: border-box; 
+  position: relative; 
+  left: 52rpx; 
+  top: 208rpx
+}
+
+.short_essay_en_text_short{
+  position: relative; left: 52rpx; top: 208rpx; width: 478rpx; height: 42rpx; display: block; box-sizing: border-box
+}
+
+.short_essay_zh_title{
+  position: relative; left: 52rpx; top: 242rpx; width: 478rpx; height: 42rpx; display: block; box-sizing: border-box
+}
+
+.short_essay_zh_text_short{
+  position: relative; left: 52rpx; top: 280rpx; width: 478rpx; height: 42rpx; display: block; box-sizing: border-box
+}
+
+.every_sentence_en_text{
+  width: 478rpx; 
+  height: 70rpx; 
+  display: block; 
+  box-sizing: border-box; 
+  position: relative; 
+  left: 52rpx; 
+  top: 208rpx
+}

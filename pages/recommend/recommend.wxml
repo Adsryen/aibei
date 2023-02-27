@@ -1,0 +1,20 @@
+<!--pages/settings/clause/clause.wxml-->
+<view style="border: 2rpx solid #353535; border-radius: 10rpx; width: 706rpx; height: 312rpx; display: block; box-sizing: border-box; position: relative; left: 18rpx; top: 60rpx">
+    <text class="every_day" style="position: relative; left: 8rpx; top: -22rpx">每日一句</text>
+    <image catchtap="every_sentence_refresh" src="../../images/refresh.png" style="width: 80rpx; height: 80rpx; display: inline-block; box-sizing: border-box; position: relative; left: 396rpx; top: 5rpx"></image>
+    <text class="every_sentence_en_text" style="position: relative; left: 26rpx; top: 26rpx; width: 662rpx; height: 80rpx; display: block; box-sizing: border-box">{{every_sentence_en_text}}</text>
+    <text class="every_sentence_zh_text" style="position: relative; left: 48rpx; top: 54rpx">{{every_sentence_zh_text}}</text>
+</view>
+
+<view style="border: 2rpx solid #353535; border-radius: 10rpx; position: relative; left: 18rpx; top: 140rpx; width: 702rpx; height: 614rpx; display: block; box-sizing: border-box">
+    <text class="every_day" style="position: relative; left: 12rpx; top: -30rpx">每日短文</text>
+    <image catchtap="short_essay_refresh" src="../../images/refresh.png" style="width: 80rpx; height: 80rpx; display: inline-block; box-sizing: border-box; position: relative; left: 396rpx; top: 5rpx"></image>
+    <text class="short_essay_en_title"  style="position: relative; left: 52rpx; top: 30rpx; width: 578rpx; height: 42rpx; display: block; box-sizing: border-box">{{short_essay_en_title}}</text>
+    <text class="short_essay_en_text_short" style="position: relative; left: 118rpx; top: 122rpx; width: 532rpx; height: 144rpx; display: block; box-sizing: border-box">{{short_essay_en_text_short}}</text>
+    <text class="short_essay_zh_title" style="position: relative; left: 52rpx; top: -100rpx; width: 614rpx; height: 42rpx; display: block; box-sizing: border-box">{{short_essay_zh_title}}</text>
+    <text class="short_essay_zh_text_short" style="position: relative; left: 118rpx; top: 101rpx; width: 532rpx; height: 80rpx; display: block; box-sizing: border-box">{{short_essay_zh_text_short}}</text>
+    <view bindtap="read_more">
+        <text style="position: relative; left: 520rpx; top: 136rpx">阅读详情</text>
+    </view>
+
+</view>

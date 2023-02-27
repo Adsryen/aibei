@@ -1,0 +1,136 @@
+.container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 750rpx; 
+  height: 1200rpx; 
+  display: flex; 
+  box-sizing: border-box
+}
+
+.logo {
+  width: 224rpx;
+  height: 224rpx;
+  margin-top: 118rpx;
+}
+
+.name {
+  margin-top: 58rpx;
+  font-family: Songti SC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.input-container {
+  margin-top: 94rpx;
+  width: 100%;
+  height: 88rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750rpx;
+  height: 128rpx; 
+  display: flex; 
+  box-sizing: border-box;
+  position: relative; 
+  left: 0rpx; 
+  top: -184rpx
+}
+
+.input-search {
+  margin: auto;
+  width: 328rpx; 
+  height: 72rpx; 
+  display: block; 
+  box-sizing: border-box
+}
+
+.button-search {
+  margin: 226rpx;
+  flex-direction: column;
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  align-items: center;
+  display: flex; 
+  box-sizing: border-box; 
+  margin-top:0px;
+  margin-bottom:0px;
+  width:160px;
+  height: 40px;
+  position: relative; 
+  left: 0rpx; 
+  top: 94rpx
+}
+
+.text-search {
+  margin: auto;
+  font-family: Songti TC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.translate{
+  width: 50%;
+  height: 100rpx;
+  background-color: #ffffff;
+  color: #1d1414;
+  font-size: 50rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  font-weight: 800;
+  box-shadow: 4rpx 4rpx 4rpx #e6e6e6;
+}
+
+.del{
+  position: relative;
+  left: 96rpx;
+  top: 2rpx;
+  width: 50%;
+  height: 100rpx;
+  background-color: #ffffff;
+  color: #e71515;
+  font-size: 50rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  font-weight: 800;
+  box-shadow: 4rpx 4rpx 4rpx #e6e6e6;
+}
+
+.action{
+  width: 294rpx;
+  height: 128rpx;
+  display: block;
+  box-sizing: border-box;
+  position: relative; 
+  left: 0rpx; 
+  top: -138rpx
+}
+
+.trans_res{
+  position: relative; 
+  left: -262rpx; 
+  top: -21rpx
+}
+
+.trans_res_box{
+  width: 518rpx; 
+  height: 358rpx; 
+  display: block; 
+  box-sizing: border-box; 
+  position: relative; 
+  left: 0rpx; 
+  top: 64rpx
+}
+
+.trans_res_textarea{
+  position: relative; 
+  left: 113rpx; 
+  top: 0rpx; 
+  width: 294rpx;
+  height: 222rpx; 
+  display: block; 
+  box-sizing: border-box
+}

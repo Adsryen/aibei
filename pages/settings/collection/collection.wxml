@@ -1,0 +1,86 @@
+<!--pages/settings/collection/collection.wxml-->
+<view class="bgWrapper"></view>
+
+<view class="contentWarpper">
+    <!-- <view class="contentTitle">每日任务</view> -->
+    <view class="contentCard">
+        <view class="title">每日任务</view>
+        <view class="mpprogressWrapper">
+            <view class="taskProgress">
+                <mpProgress class="mpProgress" config="{{learnConfig}}" reset="{{learnReset}}"
+                    percentage="{{learnPercentage}}" isStop="{{false}}">
+                </mpProgress>
+                <view class="learnData">
+                    <view class="num">{{todayLearnData.learn}}<text class="workload">/{{dailyTask.dailyLearn}}</text></view>
+                    <view class="dec">今日已学习</view>
+                </view>
+            </view>
+            <view class="taskProgress">
+                <mpProgress class="mpProgress" config="{{reviewConfig}}" reset="{{reviewReset}}"
+                    percentage="{{reviewPercentage}}" isStop="{{false}}">
+                </mpProgress>
+                <view class="learnData">
+                    <view class="num">{{todayLearnData.review}}<text class="workload">/{{dailyTask.dailyReview}}</text></view>
+                    <view class="dec">今日已复习</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="contentWarpper">
+    <!-- <view class="contentTitle">历史</view> -->
+    <view class="contentCard">
+        <view class="title">收藏夹</view>
+        <view class="wordContainer" wx:if="{{notebookWord.length>0}}">
+            <view class="word" wx:for="{{notebookWord}}" wx:key="index" data-word_id="{{item.word_id}}"
+                hover-class="wasTaped" bindtap="toWordDetail">{{item.word}}</view>
+        </view>
+        <view class="tips" wx:if="{{notebookWord.length == 0}}">你还没有收藏词汇哦~</view>
+        <view class="moreBtn" wx:if="{{notebookWord.length == 10}}">
+            <view class="btn" hover-class="wasTaped" data-type="getNoteBookWord" bindtap="getWordList">查看更多</view>
+        </view>
+        <view class="bottom" wx:if="{{notebookWord.length < 10}}"></view>
+    </view>
+</view>
+
+<view class="contentWarpper">
+    <!-- <view class="contentTitle">历史</view> -->
+    <view class="contentCard">
+        <view class="title">历史</view>
+        <view class="eccanvasContainer">
+            <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+        </view>
+        <view class="dataWrapper forDailySum">
+            <view class="dataItem">
+                <view class="dataName">日期</view>
+                <view class="dataValue date">{{selectedDay.time}}</view>
+            </view>
+            <view class="dataItem">
+                <view class="dataName">学习</view>
+                <view class="dataValue">{{selectedDay.learn}}<text class="unit">词</text></view>
+            </view>
+            <view class="dataItem">
+                <view class="dataName">复习</view>
+                <view class="dataValue">{{selectedDay.review}}<text class="unit">词</text></view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="bottom"></view>
+
+<page-container show="{{isChangingBook}}" duration="{{1500}}" overlay="{{true}}" position="bottom" round="{{true}}" bind:afterleave="endChange" bind:enter="onEnter">
+    <scroll-view class="changeBookWrapper" scroll-y="{{true}}">
+        <view class="book" wx:for="{{allBkData}}" hover-class ='wasTaped' wx:key="index" data-index="{{index}}" bindtap="changeWordBook">
+            <view class="bookCover">
+                <view class="name">{{item.name}}</view>
+            </view>
+            <view class="info">
+                <view class="bookName">{{item.name}}</view>
+                <view class="des">{{item.description}}</view>
+                <view class="total">词汇量 <text class="num">{{item.total}}</text></view>
+            </view>
+        </view>
+    </scroll-view>
+</page-container>

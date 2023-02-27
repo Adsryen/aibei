@@ -1,0 +1,19 @@
+<view style="">
+   <text style="">{{short_essay_en_title}}</text>
+</view>
+
+<view style="position: relative; left: 0rpx; top: 26rpx">
+  <text style="">{{short_essay_en_text}}</text>
+</view>
+
+<view style="position: relative; left: 0rpx; top: 84rpx">
+  <text style="">{{short_essay_zh_title}}</text>
+</view>
+
+<view style="position: relative; left: 0rpx; top: 113rpx">
+  <text style="">{{short_essay_zh_text}}</text>
+</view>
+
+<view style="position: relative; left: 0rpx; top: 172rpx">
+  <text style="position: relative; left: 311rpx; top: 0rpx">阅读结束</text><!--回到上一页-->
+</view>

@@ -4,10 +4,10 @@
 
 # 预览图
 
-![Snipaste_2023-02-27_18-33-57.png](E:\GitHub%20Desktop\GitHub\aibei\mdimg\Snipaste_2023-02-27_18-33-57.png)
+![Snipaste_2023-02-27_18-33-57.png](https://raw.githubusercontent.com/Adsryen/aibei/main/mdimg/Snipaste_2023-02-27_18-33-57.png)
 
-![Snipaste_2023-02-27_18-34-07.png](E:\GitHub%20Desktop\GitHub\aibei\mdimg\Snipaste_2023-02-27_18-34-07.png)
+![Snipaste_2023-02-27_18-34-07.png](https://raw.githubusercontent.com/Adsryen/aibei/main/mdimg/Snipaste_2023-02-27_18-34-07.png)
 
-![Snipaste_2023-02-27_18-34-15.png](E:\GitHub%20Desktop\GitHub\aibei\mdimg\Snipaste_2023-02-27_18-34-15.png)
+![Snipaste_2023-02-27_18-34-15.png](https://raw.githubusercontent.com/Adsryen/aibei/main/mdimg/Snipaste_2023-02-27_18-34-15.png)
 
-![Snipaste_2023-02-27_18-34-25.png](E:\GitHub%20Desktop\GitHub\aibei\mdimg\Snipaste_2023-02-27_18-34-25.png)
+![Snipaste_2023-02-27_18-34-25.png](https://raw.githubusercontent.com/Adsryen/aibei/main/mdimg/Snipaste_2023-02-27_18-34-25.png)
